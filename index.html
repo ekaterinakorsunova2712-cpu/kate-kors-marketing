@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kate Kors · Fractional Marketing Lead in Dubai</title>
 <meta name="description" content="Kate Kors is a Dubai-based Fractional Marketing Lead with 8+ years in hospitality, F&B, fashion and luxury. Strategy, team and every campaign tied to revenue.">
 <meta property="og:type" content="website">
@@ -34,15 +34,51 @@ a{color:inherit}a:hover{color:#A3134F}
 .cmp tr{margin-bottom:18px}
 .cmp th[scope="row"]{border-top:0!important;padding:0 0 8px!important;font-size:17px}
 .cmp td{border-radius:14px;border-top:0!important;margin-bottom:6px}
-.cmp td:nth-of-type(1)::before{content:"Fractional Marketing Lead";display:block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#E9A8C3;margin-bottom:6px}
+.cmp td:nth-of-type(1)::before{content:"Fractional Marketing Lead";display:block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#E9A8C3;margin-bottom:6px}
 .cmp td:nth-of-type(2){background:#F5F4F6}
-.cmp td:nth-of-type(2)::before{content:"In-house Marketing Director";display:block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#6A6168;margin-bottom:6px}
+.cmp td:nth-of-type(2)::before{content:"In-house Marketing Director";display:block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#6A6168;margin-bottom:6px}
 }
 .venn-card-mobile{display:none}
 @media (max-width:640px){.venn-desc{display:none !important}.venn-card-mobile{display:flex !important}}
 .field{width:100%;box-sizing:border-box;background:transparent;border:0;border-bottom:1px solid #3A3238;color:#FFFFFF;font-family:'Onest',sans-serif;font-size:20px;font-weight:300;padding:14px 4px;outline:none}
 .field:focus{border-bottom-color:#E9A8C3}
 .field::placeholder{color:#8E848B}
+#privacy{display:none;position:fixed;inset:0;z-index:9999;background:rgba(11,10,12,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
+#privacy:target{display:flex}
+#privacy .pp-box{position:relative;background:#FFFFFF;color:#1A1619;border-radius:24px;width:min(760px,100%);max-height:88vh;overflow-y:auto;padding:clamp(24px,4vw,48px);box-sizing:border-box;font-family:'Onest',sans-serif;font-size:15px;line-height:1.6}
+#privacy h2{margin:0 0 4px;font-weight:600;font-size:clamp(28px,4vw,40px);letter-spacing:-.03em;line-height:1.05}
+#privacy h3{margin:26px 0 6px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#A3134F}
+#privacy p,#privacy ul{margin:0 0 10px;color:#4A4248}
+#privacy ul{padding-left:20px}
+#privacy a{color:#A3134F}
+#privacy .pp-close{position:sticky;top:0;float:right;width:40px;height:40px;border-radius:50%;background:#F5F4F6;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#1A1619;font-size:20px;margin:-8px -8px 0 12px}
+.hdr-ico{width:48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:50%;color:#FFFFFF;text-decoration:none;animation:hdrNeon 3.2s ease-in-out infinite;transition:transform .2s}
+.hdr-ico+.hdr-ico{animation-delay:-1.6s}
+.hdr-ico svg{width:32px;height:32px}
+.hdr-ico:hover{transform:scale(1.12);animation-play-state:paused;color:#FF5CAD;filter:drop-shadow(0 0 8px rgba(255,92,173,.9))}
+@keyframes hdrNeon{0%,100%{color:#FFFFFF;filter:drop-shadow(0 0 0 rgba(255,92,173,0))}50%{color:#FF5CAD;filter:drop-shadow(0 0 8px rgba(255,92,173,.85))}}
+@media (prefers-reduced-motion: reduce){.hdr-ico{animation:none}}
+@media (max-width:640px){
+.hero-side{align-items:flex-start!important;text-align:left!important;padding-bottom:36px!important}
+.case-card{flex:1 1 100%!important;min-width:0!important}
+.venn-wrap{margin-top:8px!important}
+.venn-lens{width:auto!important;white-space:nowrap;padding:7px 14px;border-radius:999px;background:#A3134F;font-size:12px!important;font-weight:600!important;letter-spacing:.01em;box-shadow:0 0 22px rgba(255,92,173,.55)}
+.steps-grid{border-left:0!important}
+.steps-grid>div{border-right:0!important;border-bottom:1px solid #DCD6DA;padding:24px 0 32px!important;gap:12px!important}
+.steps-grid>div>span:first-child{align-self:flex-start!important;font-size:40px!important;color:#A3134F;padding-right:0!important}
+.steps-grid>div>div{margin-top:4px!important;aspect-ratio:4/3!important;border-radius:16px}
+.rev-card{min-height:0!important;gap:18px!important}
+.foot-contact{align-items:flex-start!important}
+footer a{display:inline-block;padding:6px 0}
+#process,#cases,#reviews,#faq,#fractional{scroll-margin-top:12px}
+}
+@media (max-width:640px){
+#fractional,#services,#process,#faq{padding-top:72px!important;padding-bottom:72px!important;gap:32px!important}
+#cases,#reviews{padding-top:72px!important;padding-bottom:72px!important}
+.venn-sec{padding:72px 16px 56px!important;gap:32px!important}
+.venn-card-mobile{gap:14px!important}
+.svc-list{border-left:0!important;padding-left:0!important}
+}
 </style>
 <style>/* block reveal */
 .rv{opacity:0;transform:translateY(36px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
@@ -119,7 +155,7 @@ a{color:inherit}a:hover{color:#A3134F}
   <div aria-hidden="true" style="position: absolute; left: 50%; top: 58%; width: 760px; height: 760px; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, rgba(163,19,79,0.55) 0%, rgba(163,19,79,0) 68%);"></div>
 
   <header style="position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px clamp(16px, 3vw, 40px);">
-    <a href="#top" style="display: flex; align-items: center; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: -0.01em;">Showcase website</a>
+    <span aria-hidden="true"></span>
     <nav class="nav-links" style="gap: 6px; padding: 6px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); font-size: 14px; font-weight: 400;">
       <a href="#about" style="text-decoration: none; padding: 8px 14px;">About</a>
       <a href="#services" style="text-decoration: none; padding: 8px 14px;">Services</a>
@@ -128,10 +164,10 @@ a{color:inherit}a:hover{color:#A3134F}
       <a href="#reviews" style="text-decoration: none; padding: 8px 14px;">Reviews</a>
       <a href="#faq" style="text-decoration: none; padding: 8px 14px;">FAQ</a>
     </nav>
-    <a href="https://wa.me/971507855329" target="_blank" rel="noopener" style="display: flex; align-items: center; text-decoration: none;">
-      <span class="kk-btn" style="padding: 12px 20px; background: #A3134F; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 400;">Text in WhatsApp</span>
-      <span class="kk-ring" style="width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid #A3134F; display: flex; align-items: center; justify-content: center; margin-left: 8px;"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
-    </a>
+    <div style="display: flex; align-items: center; gap: 0;">
+      <a href="https://wa.me/971585696708" target="_blank" rel="noopener" aria-label="Message Kate on WhatsApp" class="hdr-ico"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.6 8.6 0 1 1 8 19.4z"></path><path d="M9.2 8.3c.2-.5.6-.6.9-.6h.4c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1.1 1.4 1.9 2.5 2.5.2.1.4.1.5 0l.6-.6c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.3.3.5v.4c0 .4-.2.8-.6 1-.6.3-1.4.4-2.2.1-2.2-.8-4-2.6-4.8-4.8-.3-.8-.2-1.6.1-2.2z" fill="currentColor" stroke="none"></path></svg></a>
+      <a href="https://www.instagram.com/katekorsmarketing?rpxt=eTQzYXFiM3phc25h&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="Kate Kors on Instagram" class="hdr-ico"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="0.6" fill="currentColor"></circle></svg></a>
+    </div>
   </header>
 
   <div style="position: relative; z-index: 2; padding: 8px clamp(16px, 3vw, 40px) 0;">
@@ -152,12 +188,12 @@ a{color:inherit}a:hover{color:#A3134F}
       <div class="hero-arch" style="position: absolute; bottom: 0; width: min(480px, 96%); height: 100%; border-radius: 240px 240px 0 0; overflow: hidden; background: #1E1A1E; border: 1px solid rgba(233,168,195,0.25); border-bottom: 0; box-sizing: border-box; -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); mask-image: linear-gradient(to bottom, #000 62%, transparent 100%);"><img src="fig/hero-kate5.webp" alt="Kate Kors" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;"></div>
     </div>
 
-    <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 20px; padding-bottom: 56px; text-align: right;">
+    <div class="hero-side" style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 20px; padding-bottom: 56px; text-align: right;">
       <p style="margin: 0; max-width: 360px; font-size: 17px; font-weight: 300; line-height: 1.4; color: #E6DEE3;">8+ years leading marketing for hospitality, F&amp;B, fashion and luxury brands, plus hands-on experience running business operations, so I see marketing through the owner's eyes. I build strategy, launch the team and connect every campaign to revenue.</p>
-      <div style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 14px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); font-size: 12px;">
-        <span style="display: flex;"><span style="width: 26px; height: 26px; border-radius: 50%; background: #E9A8C3; border: 2px solid #0B0A0C;"></span><span class="kk-btn" style="width: 26px; height: 26px; border-radius: 50%; background: #A3134F; border: 2px solid #0B0A0C; margin-left: -8px;"></span><span style="width: 26px; height: 26px; border-radius: 50%; background: #5A2A3E; border: 2px solid #0B0A0C; margin-left: -8px;"></span></span>
-        <span style="line-height: 1.3; text-align: left;"><b>11 global brands</b><br><span style="color: #B9AFB5;">8+ years in MENA &amp; Europe</span></span>
-      </div>
+      <a href="https://wa.me/971585696708" target="_blank" rel="noopener" class="hero-wa" style="display: flex; align-items: center; text-decoration: none;">
+        <span class="kk-btn" style="padding: 18px 28px; background: #A3134F; color: #FFFFFF; border-radius: 999px; font-size: 15px; font-weight: 400;">WhatsApp me</span>
+        <span class="kk-ring" style="width: 58px; height: 58px; border-radius: 50%; border: 1.5px solid #A3134F; display: flex; align-items: center; justify-content: center; margin-left: 8px;"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.6 8.6 0 1 1 8 19.4z"></path><path d="M9.2 8.3c.2-.5.6-.6.9-.6h.4c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1.1 1.4 1.9 2.5 2.5.2.1.4.1.5 0l.6-.6c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.3.3.5v.4c0 .4-.2.8-.6 1-.6.3-1.4.4-2.2.1-2.2-.8-4-2.6-4.8-4.8-.3-.8-.2-1.6.1-2.2z" fill="#FFFFFF" stroke="none"></path></svg></span>
+      </a>
     </div>
   </div>
 </div>
@@ -250,7 +286,7 @@ a{color:inherit}a:hover{color:#A3134F}
 </section>
 
 <section style="padding: 0 12px;">
-<div style="position: relative; isolation: isolate; overflow: hidden; background: #0B0A0C; color: #FFFFFF; border-radius: 28px; padding: 110px clamp(16px, 3vw, 40px); display: flex; flex-direction: column; align-items: center; gap: 48px;">
+<div class="venn-sec" style="position: relative; isolation: isolate; overflow: hidden; background: #0B0A0C; color: #FFFFFF; border-radius: 28px; padding: 110px clamp(16px, 3vw, 40px); display: flex; flex-direction: column; align-items: center; gap: 48px;">
   <img src="fig/f5.webp" alt="" aria-hidden="true" class="deco" style="position: absolute; z-index: -1; left: -90px; top: 40px; width: clamp(220px, 24vw, 360px); height: auto; opacity: .45;">
   <div style="position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; font-family: 'Onest', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 0.85; letter-spacing: -0.05em;">
     <span aria-hidden="true" style="font-size: clamp(56px, 9vw, 140px); color: #8E848B;">Where three</span>
@@ -268,7 +304,7 @@ a{color:inherit}a:hover{color:#A3134F}
     <div style="position: absolute; left: 11%; top: 17%; width: 27%; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;"><span style="font-family: 'Onest', sans-serif; font-size: clamp(20px, 3vw, 42px); letter-spacing: -0.03em; line-height: 1;">education</span><span class="venn-desc" style="font-size: clamp(11px, 1.25vw, 16px); font-weight: 300; line-height: 1.35; color: #D6CDD2;">BA in Business Studies &amp; International Relations from a top business academy. Additional education in London, UK.</span></div>
     <div style="position: absolute; left: 63%; top: 17%; width: 27%; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;"><span style="font-family: 'Onest', sans-serif; font-size: clamp(20px, 3vw, 42px); letter-spacing: -0.03em; line-height: 1;">experience</span><span class="venn-desc" style="font-size: clamp(11px, 1.25vw, 16px); font-weight: 300; line-height: 1.35; color: #D6CDD2;">8+ years across agency and in-house roles: PR, influencer, performance, content, events. 100+ PR publications, 100+ influencer partnerships, 50+ events a year.</span></div>
     <div style="position: absolute; left: 30%; top: 69%; width: 40%; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;"><span style="font-family: 'Onest', sans-serif; font-size: clamp(20px, 3vw, 42px); letter-spacing: -0.03em; line-height: 1;">business<br>understanding</span><span class="venn-desc" style="max-width: 300px; font-size: clamp(11px, 1.25vw, 16px); font-weight: 300; line-height: 1.35; color: #D6CDD2;">Hands-on management experience and direct work with CEOs. I think in P&amp;L, unit economics and operations, so marketing lands in revenue, not just reach.</span></div>
-    <span style="position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); width: 22%; text-align: center; font-size: clamp(12px, 1.5vw, 19px); line-height: 1.2; color: #FFFFFF; font-weight: 400;">business-minded marketing</span>
+    <span class="venn-lens" style="position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); width: 22%; text-align: center; font-size: clamp(12px, 1.5vw, 19px); line-height: 1.2; color: #FFFFFF; font-weight: 400;">business-minded marketing</span>
   </div>
 
   <div style="width: 100%; max-width: 1120px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 12px;">
@@ -293,7 +329,7 @@ a{color:inherit}a:hover{color:#A3134F}
     </div>
   </div>
 
-  <div style="flex: 2 1 560px; min-width: 0; display: flex; flex-direction: column; border-left: 1px solid #ECE7EA; padding-left: clamp(0px, 2vw, 24px);">
+  <div class="svc-list" style="flex: 2 1 560px; min-width: 0; display: flex; flex-direction: column; border-left: 1px solid #ECE7EA; padding-left: clamp(0px, 2vw, 24px);">
     <div style="border-bottom: 1px solid #ECE7EA;">
       <button type="button" onClick="{{t1}}" style="width: 100%; display: flex; align-items: center; gap: 20px; padding: 24px 8px; background: none; border: 0; cursor: pointer; text-align: left; font-family: inherit; color: #0B0A0C; min-height: 44px;">
         <span style="font-size: 12px; color: #A3134F; font-weight: 600; width: 22px;">01</span>
@@ -377,7 +413,7 @@ a{color:inherit}a:hover{color:#A3134F}
     <div style="border-bottom: 1px solid #ECE7EA;">
       <button type="button" onClick="{{t6}}" style="width: 100%; display: flex; align-items: center; gap: 20px; padding: 24px 8px; background: none; border: 0; cursor: pointer; text-align: left; font-family: inherit; color: #0B0A0C; min-height: 44px;">
         <span style="font-size: 12px; color: #A3134F; font-weight: 600; width: 22px;">06</span>
-        <span style="flex-grow: 1; font-family: 'Onest', sans-serif; font-size: clamp(20px, 2vw, 27px); font-weight: 600; letter-spacing: -0.03em;">Coaching for New Marketers<span class="kk-btn" style="display: inline-block; margin-left: 10px; padding: 4px 10px; border-radius: 999px; background: #A3134F; color: #FFFFFF; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; line-height: 1.3; vertical-align: middle;">NEW</span></span>
+        <span style="flex-grow: 1; font-family: 'Onest', sans-serif; font-size: clamp(20px, 2vw, 27px); font-weight: 600; letter-spacing: -0.03em;">Coaching for New Marketers<span class="kk-btn" style="display: inline-block; margin-left: 10px; padding: 4px 10px; border-radius: 999px; background: #A3134F; color: #FFFFFF; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; line-height: 1.3; vertical-align: middle;">NEW</span></span>
         <span style="width: 38px; height: 38px; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; {{c6}}">{{s6}}</span>
       </button>
       <sc-if value="{{o6}}" hint-placeholder-val="{{false}}">
@@ -409,9 +445,18 @@ a{color:inherit}a:hover{color:#A3134F}
   </div>
 
   <sc-if value="{{isBiz}}" hint-placeholder-val="{{true}}">
+    <article style="width: 100%; box-sizing: border-box; margin-bottom: 12px; background: #3A1424; color: #FFFFFF; border-radius: 22px; padding: clamp(24px, 3.5vw, 48px); display: flex; flex-direction: column; gap: 32px; position: relative; overflow: hidden;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 680px;">
+        <span style="font-size: 12px; color: #D2BCC6;">featured case</span>
+        <h3 style="margin: 0; font-family: 'Onest', sans-serif; font-size: clamp(30px, 3.4vw, 48px); font-weight: 600; letter-spacing: -0.04em; line-height: 1;">Marketing Leadership</h3>
+        <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.5; color: #F0E2E8;">What I take on as your head of marketing: strategy, processes, team, contractors and budget, with full accountability to owners and the CEO.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Hospitality</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">F&amp;B &amp; Restaurants</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Real Estate &amp; Construction</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Automotive &amp; Car Rental</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Fashion &amp; Luxury</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Jewellery</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Beauty &amp; Cosmetics</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Aesthetic Clinics</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Retail &amp; FMCG</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Tech &amp; Electronics</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Home &amp; Furniture</span><span style="display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(233,168,195,0.16); color: #F3C9DA; font-size: 13px; font-weight: 600;">Sports &amp; Entertainment</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 24px;"><div style="display: flex; flex-direction: column; gap: 14px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.14);"><span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: #E9A8C3;">STRATEGY &amp; MANAGEMENT</span><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px;"><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>One marketing strategy for the whole business</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Planning, control and reporting processes</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Priority channels for growth</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Coordination across branches and teams</span></li></ul></div><div style="display: flex; flex-direction: column; gap: 14px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.14);"><span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: #E9A8C3;">MARKETING, PR &amp; BRAND</span><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px;"><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Digital: SMM, performance, content, SEO, website</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>PR strategy and media relations</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Brand development and reputation</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Control of all campaigns and communications</span></li></ul></div><div style="display: flex; flex-direction: column; gap: 14px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.14);"><span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: #E9A8C3;">TEAM &amp; CONTRACTORS</span><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px;"><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Leading in-house specialists</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Hiring and building the marketing team</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Managing agencies and contractors</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Clear tasks, deadlines and quality control</span></li></ul></div><div style="display: flex; flex-direction: column; gap: 14px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.14);"><span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: #E9A8C3;">BUDGET &amp; ANALYTICS</span><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px;"><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Marketing budget planning and control</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>KPIs for every channel and activity</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Cost optimisation</span></li><li style="display: flex; gap: 10px; font-size: 14px; line-height: 1.45; color: #F0E2E8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #E9A8C3; flex-shrink: 0; margin-top: 8px;"></span><span>Regular reporting to owners and the CEO</span></li></ul></div></div>
+    </article>
     <div class="focus-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
       <sc-for list="{{cases}}" as="c" hint-placeholder-count="8">
-        <article style="background: #FFFFFF; border-radius: 22px; padding: 8px; display: flex; flex-direction: column; box-shadow: 0 1px 0 rgba(11,10,12,0.04); flex: 0 1 calc(25% - 9px); min-width: min(290px, 100%); box-sizing: border-box;">
+        <article class="case-card" style="background: #FFFFFF; border-radius: 22px; padding: 8px; display: flex; flex-direction: column; box-shadow: 0 1px 0 rgba(11,10,12,0.04); flex: 0 1 calc(25% - 9px); min-width: min(290px, 100%); box-sizing: border-box;">
           <div style="position: relative; overflow: hidden; height: 190px; border-radius: 16px; background: {{c.bg}}; color: #FFFFFF;">
             <sc-if value="{{c.img}}" hint-placeholder-val="{{false}}">
               <img src="{{c.img}}" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: {{c.pos}};">
@@ -425,16 +470,24 @@ a{color:inherit}a:hover{color:#A3134F}
             <span style="font-family: 'Onest', sans-serif; font-size: 21px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.1;">{{c.tag}}</span>
             <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; margin-top: -4px; padding: 6px 12px; border-radius: 999px; background: #F7E6EE; color: #A3134F; font-size: 13px; font-weight: 600; line-height: 1.2;">{{c.niche}}</span>
             <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 1px solid #ECE7EA;">
-              <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #A3134F;">BUSINESS RESULTS</span>
-              <sc-for list="{{c.bizList}}" as="b" hint-placeholder-count="2">
+              <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #A3134F;">BUSINESS RESULTS</span>
+              <sc-for list="{{c.bizShort}}" as="b" hint-placeholder-count="2">
                 <span style="display: flex; gap: 8px; font-size: 13px;"><span class="kk-btn" style="width: 6px; height: 6px; border-radius: 50%; background: #A3134F; flex-shrink: 0; margin-top: 7px;"></span>{{b}}</span>
               </sc-for>
+              <sc-if value="{{c.more}}" hint-placeholder-val="{{false}}">
+                <sc-for list="{{c.bizRest}}" as="b" hint-placeholder-count="2">
+                  <span style="display: flex; gap: 8px; font-size: 13px;"><span class="kk-btn" style="width: 6px; height: 6px; border-radius: 50%; background: #A3134F; flex-shrink: 0; margin-top: 7px;"></span>{{b}}</span>
+                </sc-for>
+              </sc-if>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 1px solid #ECE7EA;">
-              <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #6A6168;">MARKETING METRICS</span>
-              <span style="font-size: 13px; color: #3E373C;">{{c.mkt}}</span>
-            </div>
-            <span style="font-size: 12px; color: #6A6168; margin-top: auto; padding-top: 8px;">{{c.did}}</span>
+            <sc-if value="{{c.more}}" hint-placeholder-val="{{false}}">
+              <div style="display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 1px solid #ECE7EA;">
+                <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #6A6168;">MARKETING METRICS</span>
+                <span style="font-size: 13px; color: #3E373C;">{{c.mkt}}</span>
+              </div>
+              <span style="font-size: 12px; color: #6A6168; padding-top: 4px;">{{c.did}}</span>
+            </sc-if>
+            <button type="button" onClick="{{c.toggleMore}}" style="margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; min-height: 40px; border-radius: 999px; border: 1px solid #E4DEE2; background: #FFFFFF; color: #A3134F; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer;">{{c.moreLabel}}</button>
           </div>
         </article>
       </sc-for>
@@ -474,13 +527,13 @@ a{color:inherit}a:hover{color:#A3134F}
     <h2 style="margin: 0; font-family: 'Onest', sans-serif; font-weight: 600; font-size: clamp(36px, 3.8vw, 56px); line-height: 1; letter-spacing: -0.045em;">How I <span style="color: #A3134F;">work</span></h2>
     <span style="max-width: 560px; font-size: 15px; line-height: 1.5; color: #6A6168;">From first call to measurable results: six clear steps, <span style="color: #A3134F; font-weight: 600;">no surprises</span></span>
   </div>
-  <div class="focus-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr)); border-left: 1px solid #DCD6DA;">
+  <div class="focus-grid steps-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr)); border-left: 1px solid #DCD6DA;">
     <div style="border-right: 1px solid #DCD6DA; padding: 20px 20px 40px; display: flex; flex-direction: column; gap: 16px;"><span style="align-self: flex-end; font-family: 'Onest', sans-serif; font-size: 52px; font-weight: 300; line-height: 1; padding-right: 4px;">1</span><div style="position: relative; overflow: hidden; margin-top: 40px; aspect-ratio: 1; background: #F3E3EA;"><img src="fig/step-intro2.webp" alt="Kate on an intro call with her laptop" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></div><span style="margin-top: 12px; font-family: 'Onest', sans-serif; font-size: 30px; font-weight: 400; letter-spacing: -0.045em; line-height: 1.05;">Intro Call</span><span style="font-size: 14px; color: #3E373C;">A free 20-minute call. I learn about your business, goals and current marketing, and tell you honestly whether I'm the right fit.</span></div>
-    <div style="border-right: 1px solid #DCD6DA; padding: 20px 20px 40px; display: flex; flex-direction: column; gap: 16px;"><span style="align-self: flex-end; font-family: 'Onest', sans-serif; font-size: 52px; font-weight: 300; line-height: 1; padding-right: 4px;">2</span><div style="position: relative; overflow: hidden; margin-top: 40px; aspect-ratio: 1; background: #F3E3EA;"><img src="fig/step-proposal.webp" alt="Marketing proposal on a laptop" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></div><span style="margin-top: 12px; font-family: 'Onest', sans-serif; font-size: 30px; font-weight: 400; letter-spacing: -0.045em; line-height: 1.05;">Proposal</span><span style="font-size: 14px; color: #3E373C;">Within 3 working days you receive a tailored proposal: format, scope, timeline, budget and expected KPIs.</span></div>
+    <div style="border-right: 1px solid #DCD6DA; padding: 20px 20px 40px; display: flex; flex-direction: column; gap: 16px;"><span style="align-self: flex-end; font-family: 'Onest', sans-serif; font-size: 52px; font-weight: 300; line-height: 1; padding-right: 4px;">2</span><div style="position: relative; overflow: hidden; margin-top: 40px; aspect-ratio: 1; background: #F3E3EA;"><img src="fig/step-proposal2.webp" alt="Marketing proposal on a laptop" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></div><span style="margin-top: 12px; font-family: 'Onest', sans-serif; font-size: 30px; font-weight: 400; letter-spacing: -0.045em; line-height: 1.05;">Proposal</span><span style="font-size: 14px; color: #3E373C;">Within 3 working days you receive a tailored proposal: format, scope, timeline, budget and expected KPIs.</span></div>
     <div style="border-right: 1px solid #DCD6DA; padding: 20px 20px 40px; display: flex; flex-direction: column; gap: 16px;"><span style="align-self: flex-end; font-family: 'Onest', sans-serif; font-size: 52px; font-weight: 300; line-height: 1; padding-right: 4px;">3</span><div style="position: relative; overflow: hidden; margin-top: 40px; aspect-ratio: 1; background: #F3E3EA;"><img src="fig/step-contract.webp" alt="Signing the contract" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></div><span style="margin-top: 12px; font-family: 'Onest', sans-serif; font-size: 30px; font-weight: 400; letter-spacing: -0.045em; line-height: 1.05;">Contract</span><span style="font-size: 14px; color: #3E373C;">I work as a registered business with a clear contract and invoices, and NDAs when needed. Everything is transparent from day one.</span></div>
     <div style="border-right: 1px solid #DCD6DA; padding: 20px 20px 40px; display: flex; flex-direction: column; gap: 16px;"><span style="align-self: flex-end; font-family: 'Onest', sans-serif; font-size: 52px; font-weight: 300; line-height: 1; padding-right: 4px;">4</span><div style="position: relative; overflow: hidden; margin-top: 40px; aspect-ratio: 1; background: #F3E3EA;"><img src="fig/step-audit.webp" alt="Desk with analytics dashboard and notebooks" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></div><span style="margin-top: 12px; font-family: 'Onest', sans-serif; font-size: 30px; font-weight: 400; letter-spacing: -0.045em; line-height: 1.05;">Deep Dive &amp; Audit</span><span style="font-size: 14px; color: #3E373C;">I study your product, numbers, audience, competitors and operations: what the team can actually deliver, and the margins and capacity you have to work with.</span></div>
     <div style="border-right: 1px solid #DCD6DA; padding: 20px 20px 40px; display: flex; flex-direction: column; gap: 16px;"><span style="align-self: flex-end; font-family: 'Onest', sans-serif; font-size: 52px; font-weight: 300; line-height: 1; padding-right: 4px;">5</span><div style="position: relative; overflow: hidden; margin-top: 40px; aspect-ratio: 1; background: #F3E3EA;"><img src="fig/step-strategy.webp" alt="Workspace with laptop, tablet and planner" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></div><span style="margin-top: 12px; font-family: 'Onest', sans-serif; font-size: 30px; font-weight: 400; letter-spacing: -0.045em; line-height: 1.05;">Strategy &amp; Launch</span><span style="font-size: 14px; color: #3E373C;">A roadmap with priorities, channels, budget and KPIs. Then we execute: I lead the team, the contractors and the campaigns.</span></div>
-    <div style="border-right: 1px solid #DCD6DA; padding: 20px 20px 40px; display: flex; flex-direction: column; gap: 16px;"><span style="align-self: flex-end; font-family: 'Onest', sans-serif; font-size: 52px; font-weight: 300; line-height: 1; padding-right: 4px;">6</span><div style="position: relative; overflow: hidden; margin-top: 40px; aspect-ratio: 1; background: #F3E3EA;"><img src="fig/step-measure.webp" alt="Results dashboard on a laptop" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></div><span style="margin-top: 12px; font-family: 'Onest', sans-serif; font-size: 30px; font-weight: 400; letter-spacing: -0.045em; line-height: 1.05;">Measure &amp; Scale</span><span style="font-size: 14px; color: #3E373C;">Monthly reports tied to business metrics such as leads, bookings, revenue and ROMI. We cut what doesn't work and scale what does.</span></div>
+    <div style="border-right: 1px solid #DCD6DA; padding: 20px 20px 40px; display: flex; flex-direction: column; gap: 16px;"><span style="align-self: flex-end; font-family: 'Onest', sans-serif; font-size: 52px; font-weight: 300; line-height: 1; padding-right: 4px;">6</span><div style="position: relative; overflow: hidden; margin-top: 40px; aspect-ratio: 1; background: #F3E3EA;"><img src="fig/step-measure2.webp" alt="Results dashboard on a laptop" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></div><span style="margin-top: 12px; font-family: 'Onest', sans-serif; font-size: 30px; font-weight: 400; letter-spacing: -0.045em; line-height: 1.05;">Measure &amp; Scale</span><span style="font-size: 14px; color: #3E373C;">Monthly reports tied to business metrics such as leads, bookings, revenue and ROMI. We cut what doesn't work and scale what does.</span></div>
   </div>
   <p style="margin: 0; font-size: 16px; color: #3E373C; text-align: center;">Throughout the project you have direct access to me. No account managers in between.</p>
 </section>
@@ -498,7 +551,7 @@ a{color:inherit}a:hover{color:#A3134F}
           <blockquote style="margin: 0; font-family: 'Onest', sans-serif; font-size: 16px; line-height: 1.3; letter-spacing: -0.015em; color: #3A1424;">{{r.q}}</blockquote>
           <figcaption style="margin-top: auto; padding-left: 12px; border-left: 2px solid #A3134F; display: flex; flex-direction: column; line-height: 1.3;">
             <span style="font-size: 13px; font-weight: 600;">{{r.name}}</span>
-            <span style="font-size: 11px; color: #6A6168;">{{r.role}}</span>
+            <span style="font-size: 12px; color: #6A6168;">{{r.role}}</span>
           </figcaption>
         </figure>
       </sc-for>
@@ -552,7 +605,7 @@ a{color:inherit}a:hover{color:#A3134F}
           <button class="kk-btn" type="button" style="padding: 18px 28px; min-height: 44px; background: #A3134F; color: #FFFFFF; border: 0; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 400; cursor: pointer;">Book a consultation</button>
           <span class="kk-ring" aria-hidden="true" style="width: 58px; height: 58px; border-radius: 50%; border: 1.5px solid #A3134F; display: flex; align-items: center; justify-content: center; margin-left: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
         </span>
-        <a href="https://wa.me/971507855329" style="font-size: 14px; color: #E9A8C3; text-decoration: none;">or message me on WhatsApp</a>
+        <a href="https://wa.me/971585696708" style="font-size: 14px; color: #E9A8C3; text-decoration: none;">or message me on WhatsApp</a>
       </div>
     </form>
   </div>
@@ -563,25 +616,65 @@ a{color:inherit}a:hover{color:#A3134F}
         <span style="font-family: 'Onest', sans-serif; font-size: 22px; font-weight: 600; letter-spacing: -0.04em;">KATE KORS</span>
         <span style="font-size: 12px; color: #E9A8C3;">Fractional Marketing Lead · Dubai, UAE</span>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, auto)); column-gap: 48px; row-gap: 8px; font-size: 13px; color: #CFC6CB;">
-        <a href="#services" style="text-decoration: none;">Fractional Marketing Lead</a>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, auto)); grid-template-rows: repeat(4, auto); grid-auto-flow: column; column-gap: 48px; row-gap: 8px; font-size: 13px; color: #CFC6CB;">
+        <a href="#fractional" style="text-decoration: none;">Fractional Marketing Lead</a>
+        <a href="#about" style="text-decoration: none;">About me</a>
+        <a href="#services" style="text-decoration: none;">Services</a>
         <a href="#cases" style="text-decoration: none;">Cases</a>
-        <a href="#services" style="text-decoration: none;">Strategy &amp; Audit</a>
-        <a href="#reviews" style="text-decoration: none;">Reviews</a>
-        <a href="#services" style="text-decoration: none;">Personal Brand</a>
         <a href="#process" style="text-decoration: none;">How I work</a>
+        <a href="#reviews" style="text-decoration: none;">Reviews</a>
+        <a href="#faq" style="text-decoration: none;">FAQ</a>
+        <a href="#contact" style="text-decoration: none;">Contact</a>
       </div>
-      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 6px; font-family: 'Onest', sans-serif; font-size: clamp(18px, 2vw, 24px); font-weight: 400; letter-spacing: -0.02em;">
-        <a href="tel:+971507855329" style="text-decoration: none;">+971 50 785 5329</a>
+      <div class="foot-contact" style="display: flex; flex-direction: column; align-items: flex-end; gap: 6px; font-family: 'Onest', sans-serif; font-size: clamp(18px, 2vw, 24px); font-weight: 400; letter-spacing: -0.02em;">
+        <a href="tel:+971585696708" style="text-decoration: none;">+971 58 569 6708</a>
+        <a href="mailto:kate@katekorsmarketing.com" style="text-decoration: none; font-size: clamp(14px, 1.3vw, 16px); color: #E9A8C3;">kate@katekorsmarketing.com</a>
       </div>
     </div>
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 11px; color: #8E848B;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 12px; color: #8E848B;">
       <span>© Kate Kors 2026</span>
-      <span style="display: flex; gap: 20px;"><a href="#" style="text-decoration: none;">LinkedIn</a><a href="#" style="text-decoration: none;">Instagram</a><a href="#" style="text-decoration: none;">Privacy Policy</a></span>
+      <span style="display: flex; gap: 20px;"><a href="https://www.instagram.com/katekorsmarketing?rpxt=eTQzYXFiM3phc25h&amp;utm_source=qr" target="_blank" rel="noopener" style="text-decoration: none;">Instagram</a><a href="#privacy" style="text-decoration: none;">Privacy Policy</a></span>
     </div>
   </footer>
 </div>
 </section>
+<div id="privacy" role="dialog" aria-modal="true" aria-labelledby="pp-title">
+  <div class="pp-box">
+    <a href="#contact" class="pp-close" aria-label="Close">✕</a>
+    <h2 id="pp-title">Privacy Policy</h2>
+    <p style="font-size: 13px; color: #8E848B;">Last updated: October 2026</p>
+    <p>This policy explains how Kate Kors (“I”, “me”), a fractional marketing lead based in Dubai, UAE, handles personal data when you visit katekorsmarketing.com or get in touch with me. I follow the UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data (PDPL) and, where it applies to you, the EU GDPR.</p>
+    <h3>What I collect</h3>
+    <ul>
+      <li><b>Data you share with me:</b> your name, phone number, email and what you tell me about your business when you fill in the consultation form or message me.</li>
+      <li><b>Technical data:</b> standard server logs (IP address, browser type, pages visited, time of visit) recorded by my hosting provider for security and performance.</li>
+    </ul>
+    <h3>How the contact form works</h3>
+    <p>The form does not store your details on this website. When you press the button, it opens WhatsApp with your message pre-filled, and your data reaches me only if you send that message. WhatsApp's own privacy policy applies to that conversation.</p>
+    <h3>Why I use your data</h3>
+    <ul>
+      <li>to reply to your request and arrange a consultation;</li>
+      <li>to prepare a proposal and deliver services if we work together;</li>
+      <li>to keep the website secure and working properly.</li>
+    </ul>
+    <p>I rely on your consent, on steps taken at your request before a contract, and on my legitimate interest in running a secure website. I never sell your data or use it for third-party advertising.</p>
+    <h3>Who else processes it</h3>
+    <ul>
+      <li>Cloudflare — website hosting and security;</li>
+      <li>Google Fonts — loads the typeface used on this site (your IP address is sent to Google when the font loads);</li>
+      <li>WhatsApp (Meta) — if you contact me through the form or the WhatsApp button.</li>
+    </ul>
+    <p>Some of these providers may process data outside the UAE, under their own safeguards.</p>
+    <h3>Cookies</h3>
+    <p>This website does not use advertising or analytics cookies. My hosting provider may set strictly necessary cookies for security.</p>
+    <h3>How long I keep it</h3>
+    <p>I keep enquiry data only as long as needed to answer you and, if we work together, for the duration of the project and any period the law requires. After that it is deleted.</p>
+    <h3>Your rights</h3>
+    <p>You can ask me to access, correct or delete your data, to restrict or object to its use, or to withdraw your consent at any time. You can also complain to the UAE Data Office or your local data protection authority.</p>
+    <h3>Contact</h3>
+    <p>For any privacy request, write to <a href="mailto:kate@katekorsmarketing.com">kate@katekorsmarketing.com</a> or message me on WhatsApp at <a href="https://wa.me/971585696708" target="_blank" rel="noopener">+971 58 569 6708</a>.</p>
+  </div>
+</div>
 
 </div>
 </template>
@@ -691,15 +784,17 @@ class Component extends DCLogic {
       return 'position: absolute; inset: -40%; background: repeating-radial-gradient(circle at ' + p + ', rgba(233,168,195,0.55) 0 1px, transparent 1.5px 12px); -webkit-mask-image: none; mask-image: none; opacity: 0.9;';
     }
     var raw = [
-      { n: '01', img: 'fig/case-restaurant.webp', pos: 'center 55%', tag: '360° Marketing', niche: 'premium restaurant & lounge, Dubai', big: '165%', bigLabel: 'ROI on paid ads', bizList: ['Campaigns ROI-positive in month one (65% ROI)', 'Signature product launched on a minimal budget with strong sales', 'Month-over-month growth in repeat guests'], mkt: 'CPL 24–26 AED · 28M+ media reach · 24.6M+ influencer reach · +47% organic engagement', did: 'Pre-opening strategy, team of 20, PR, 100+ influencers, events, Meta & Google Ads' },
-      { n: '02', img: 'fig/case-carrental.webp', pos: 'center 62%', tag: 'Growth & Expansion', niche: 'luxury car rental, UAE & KSA', big: '+28%', bigLabel: 'annual sales', bizList: ['+30% customer base', '3 new branches in UAE & KSA', '+39% fleet growth', '+27% customer retention'], mkt: 'x2 followers · ER 4.7% · email open rate 41%, CTR 37%', did: 'Marketing built from scratch, communications strategy, CRM & email, PR in top-tier auto media' },
-      { n: '03', img: 'fig/case-car3.webp', pos: 'center 58%', tag: 'Performance Marketing', niche: 'luxury car rental, Dubai', big: '+83%', bigLabel: 'qualified leads for sales', bizList: ['Every 1 AED in ads returned ~2.8 AED (ROMI +179%)'], mkt: '34.7% conversion rate · 40K+ AED budget', did: 'Full-funnel Meta & Google Ads, A/B creatives, landing page optimisation' },
-      { n: '04', img: 'fig/case-realestate.webp', pos: 'center 62%', tag: 'Performance Marketing', niche: 'real estate company, Dubai', big: '+283%', bigLabel: 'ROMI', bizList: ['+70% qualified leads', 'Every 1 AED in ads returned ~3.8 AED'], mkt: '14.7% conversion rate · 100K+ AED budget', did: 'Budget allocation, retargeting, creative testing, daily optimisation' },
-      { n: '05', img: 'fig/case-fashion.webp', pos: 'center 24%', tag: 'Influencer Marketing', niche: 'global luxury fashion brand, Dubai', big: '5.1M+', bigLabel: 'target audience reached', bizList: ['New collection shown to high-spending clients through trusted voices', 'Influencers came to the boutique to choose their pieces, turning the launch into an in-store experience'], mkt: 'ER 6.2% (category benchmark 3–4%) · 50+ pieces of content', did: '10 top-tier influencers, personalised surprise boxes, synchronised content drop' },
-      { n: '06', img: 'fig/case-ugc.webp', pos: 'center 40%', tag: 'UGC Campaign', niche: 'beauty retail, Qatar', big: '8.7%', bigLabel: 'average engagement rate', bizList: ['Traffic to retail and e-commerce during the promo', 'One campaign drove attention to both in-store prices and the online promo code'], mkt: '300K+ reach · 45+ UGC assets', did: 'Micro and mid-tier UGC creators, campaign timing' },
-      { n: '07', img: 'fig/case-georgian.webp', pos: 'center 38%', tag: 'Social Media Management', niche: 'Georgian restaurant concept, Dubai', big: '+117%', bigLabel: 'organic audience', bizList: ['Unfamiliar cuisine positioned for the Dubai market', 'Built a local audience for a brand-new concept through organic growth'], mkt: '30+ pro photo & video assets', did: 'Social strategy, localised positioning, content production' }
+      { n: '01', img: 'fig/case-restaurant.webp', pos: 'center 55%', tag: '360° Marketing', niche: 'premium restaurant & lounge, Dubai', big: '165%', bigLabel: 'ROI on paid ads', bizList: ['Led the full launch from zero: strategy, creative concept, pre-opening events, partners and contractors', 'Built and led a team of in-house and outsourced specialists: SMM, PR, design, performance', 'Set up Meta & Google Ads for quality leads at 24–26 AED per lead and 165% ROI', 'Ran PR and 100+ influencer partnerships that put the venue in front of a huge audience', 'Launched a signature product on a minimal budget, with strong sales', 'Created ambassador events and offline activations that kept guests coming back'], mkt: 'ROI-positive from month one (65%) · 28M+ media reach · 24.6M+ influencer reach · +47% organic engagement', did: 'Pre-opening strategy, team of 20, PR, 100+ influencers, events, Meta & Google Ads' },
+      { n: '02', img: 'fig/case-carrental.webp', pos: 'center 62%', tag: 'Growth & Expansion', niche: 'luxury car rental, UAE & KSA', big: '+28%', bigLabel: 'annual sales', bizList: ['Built marketing, PR and brand from scratch, reporting directly to the CEO', 'Communications strategy that grew awareness and the customer base by 30%', 'Content strategy with SMM and production: 2× followers and 4.7% engagement', 'Email and direct marketing for loyalty: 41% open rate, 37% CTR, +27% retention', 'PR in 10+ top-tier auto and lifestyle media, plus presence at industry exhibitions', 'Worked with management and sales on expansion: 3 new branches in the UAE & KSA'], mkt: '+30% customer base · +39% fleet growth · +27% retention · 3 new branches', did: 'Marketing built from scratch, communications strategy, CRM & email, PR in top-tier auto media' },
+      { n: '03', img: 'fig/case-clinic.webp', pos: 'center 30%', tag: '360° Marketing', niche: 'aesthetic clinic & academy', big: '+35%', bigLabel: 'return visits after CRM follow-ups', bizList: ['CRM rolled out for patient records, return-visit analytics and automated follow-ups after every procedure, so no patient is forgotten', 'Meta Ads campaigns managed for quality patient leads, not clicks', 'SMM strategy built around the doctor’s personal brand to grow trust and bookings', 'New clinic branding for a consistent, premium image', 'Whole clinic team aligned behind marketing: sales, front office and reception working as one'], mkt: 'Return-visit rate +35% · CPL −28% · 2× bookings from Instagram · no-shows −20%', did: 'CRM implementation, Meta Ads, SMM & doctor’s personal brand, clinic branding, team alignment' },
+      { n: '04', img: 'fig/case-georgian.webp', pos: 'center 38%', tag: 'Social Media Management', niche: 'restaurant concept, Dubai', big: '+117%', bigLabel: 'organic audience', bizList: ['Social media strategy and localised positioning for a cuisine new to Dubai', 'Professional photo & video production that made the dishes irresistible', 'Content plan and community management that grew a local audience organically'], mkt: '+117% organic audience · 30+ pro photo & video assets', did: 'Social strategy, localised positioning, content production' },
+      { n: '05', img: 'fig/case-realestate.webp', pos: 'center 62%', tag: 'Performance Marketing', niche: 'real estate company, Dubai', big: '+283%', bigLabel: 'ROMI', bizList: ['Allocated the ad budget across Meta & Google to the channels that bring qualified leads', 'Launched full-funnel campaigns with targeting and retargeting of warm audiences', 'Tested visuals and copy to raise lead quality', 'Improved landing pages to convert more visitors into enquiries', 'Daily optimisation to keep leads affordable as the budget scaled'], mkt: '+70% qualified leads · ~3.8 AED back for every 1 AED (ROMI +283%) · 14.7% conversion · 100K+ AED budget', did: 'Budget allocation, retargeting, creative testing, daily optimisation' },
+      { n: '06', img: 'fig/case-fashion.webp', pos: 'center 24%', tag: 'Influencer Marketing', niche: 'global luxury fashion brand, Dubai', big: '5.1M+', bigLabel: 'target audience reached', bizList: ['Curated 10 top-tier Dubai influencers who match the brand’s affluent audience', 'Each influencer chose a favourite piece in the boutique, turning promotion into a personal experience', 'Personalised surprise boxes delivered on campaign day for unboxing in Stories', 'Synchronised content drop across all channels for maximum impact'], mkt: 'ER 6.2% (category benchmark 3–4%) · 50+ pieces of content', did: '10 top-tier influencers, personalised surprise boxes, synchronised content drop' },
+      { n: '07', img: 'fig/case-ugc2.webp', pos: 'center 38%', tag: 'UGC Marketing', niche: 'beauty retail, Qatar', big: '8.7%', bigLabel: 'average engagement rate', bizList: ['Sourced micro and mid-tier UGC creators that local shoppers trust', 'One campaign promoted both in-store perfume prices and the online promo code', 'Planned the timing around the promo for peak traffic to stores and the app', 'Delivered 45+ authentic photo & video assets the brand can reuse'], mkt: '300K+ reach · 8.7% average engagement · 45+ UGC assets', did: 'Micro and mid-tier UGC creators, campaign timing' },
+      { n: '08', img: 'fig/case-car3.webp', pos: 'center 58%', tag: 'Performance Marketing', niche: 'luxury car rental, Dubai', big: '+83%', bigLabel: 'qualified leads for sales', bizList: ['Split the ad budget across Meta & Google based on what actually brings bookings', 'Built full-funnel campaigns with precise targeting and retargeting', 'Created and A/B tested creatives and copy to find what converts', 'Optimised landing pages so more visitors turned into bookings', 'Optimised campaigns daily to keep the cost per lead low'], mkt: '+83% qualified leads · ~2.8 AED back for every 1 AED (ROMI +179%) · 34.7% conversion · 40K+ AED budget', did: 'Full-funnel Meta & Google Ads, A/B creatives, landing page optimisation' }
     ];
-    vals.cases = raw.map(function (c, i) { return Object.assign({}, c, { bg: bgs[i % bgs.length], rip: c.img ? 'display: none;' : rip(i) }); });
+    var cx = this.state.cx || {};
+    vals.cases = raw.map(function (c, i) { var more = !!cx[c.n]; return Object.assign({}, c, { bg: bgs[i % bgs.length], rip: c.img ? 'display: none;' : rip(i), bizShort: c.bizList.slice(0, 2), bizRest: c.bizList.slice(2), more: more, moreLabel: more ? 'Show less ↑' : 'Read more ↓', toggleMore: function () { var n = Object.assign({}, self.state.cx || {}); n[c.n] = !more; self.setState({ cx: n }); } }); });
 
     var cre = [
       { n: '01', img: 'fig/cre-noir.webp', pos: 'center 25%', tag: 'Photo & Video Production', niche: 'Jewellery & Fashion Brand, Dubai', imgLabel: 'NOIR SHOOT IMAGE', did: 'Full production from concept to delivery: moodboards, 4 models, styling, studio sets and a full-day photo & video shoot.', result: 'Luxury noir visuals for e-commerce and social' },
@@ -834,6 +929,32 @@ render();
 })();
 
 </script>
+<style>
+.wa-float{position:fixed;right:clamp(14px,2.5vw,32px);bottom:clamp(14px,2.5vw,32px);z-index:9000;display:flex;align-items:center;text-decoration:none;opacity:0;transform:translateY(24px) scale(.92);pointer-events:none;transition:opacity .35s ease,transform .35s cubic-bezier(.2,.8,.2,1)}
+.wa-float.on{opacity:1;transform:none;pointer-events:auto}
+.wa-float .wf-pill{padding:16px 24px;background:#A3134F;color:#FFFFFF;border-radius:999px;font-family:'Onest',sans-serif;font-size:15px;box-shadow:0 10px 30px rgba(163,19,79,.45);transition:background .2s,color .2s,box-shadow .2s}
+.wa-float .wf-ring{width:54px;height:54px;border-radius:50%;background:#A3134F;display:flex;align-items:center;justify-content:center;margin-left:8px;box-shadow:0 10px 30px rgba(163,19,79,.45);animation:wfPulse 2.4s ease-in-out infinite;transition:background .2s}
+.wa-float:hover .wf-pill,.wa-float:hover .wf-ring{background:#E9A8C3;color:#3A1424;box-shadow:0 0 22px rgba(233,168,195,.6)}
+@keyframes wfPulse{0%,100%{box-shadow:0 0 0 0 rgba(255,92,173,.55)}60%{box-shadow:0 0 0 14px rgba(255,92,173,0)}}
+#privacy:target~.wa-float,body:has(#privacy:target) .wa-float{display:none}
+@media (max-width:640px){.wa-float{right:16px;bottom:calc(16px + env(safe-area-inset-bottom))}.wa-float .wf-pill{display:none}.wa-float .wf-ring{width:56px;height:56px;margin-left:0}.wa-float .wf-ring svg{width:26px;height:26px}}
+@media (prefers-reduced-motion: reduce){.wa-float .wf-ring{animation:none}}
+</style>
+<a class="wa-float" href="https://wa.me/971585696708" target="_blank" rel="noopener" aria-label="WhatsApp me"><span class="wf-pill">WhatsApp me</span><span class="wf-ring"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.6 8.6 0 1 1 8 19.4z"></path><path d="M9.2 8.3c.2-.5.6-.6.9-.6h.4c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1.1 1.4 1.9 2.5 2.5.2.1.4.1.5 0l.6-.6c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.3.3.5v.4c0 .4-.2.8-.6 1-.6.3-1.4.4-2.2.1-2.2-.8-4-2.6-4.8-4.8-.3-.8-.2-1.6.1-2.2z" fill="#FFFFFF" stroke="none"></path></svg></span></a>
+<script>
+(function(){
+  var fl=document.querySelector('.wa-float');
+  function tick(){
+    var h=document.querySelector('#app .hero-wa');
+    var show=window.scrollY > window.innerHeight*0.6;
+    if(h){ var r=h.getBoundingClientRect(); show = show && (r.bottom < 0 || r.top > window.innerHeight); }
+    var c=document.getElementById('contact');
+    if(c){ var f=c.querySelector('form'); if(f){ var q=f.getBoundingClientRect(); if(q.top < window.innerHeight && q.bottom > 0) show=false; } }
+    fl.classList.toggle('on', show);
+  }
+  window.addEventListener('scroll',tick,{passive:true}); window.addEventListener('resize',tick); setTimeout(tick,600); tick();
+})();
+</script>
 
 <script>
 document.addEventListener('click', function (e) {
@@ -844,7 +965,7 @@ document.addEventListener('click', function (e) {
   var name = v('input[placeholder="Name"]'), phone = v('input[type="tel"]'), email = v('input[type="email"]'), biz = v('input[placeholder^="Tell me"]');
   var lines = ['Hi Kate! I would like to book a consultation.'];
   if (name) lines.push('Name: ' + name); if (phone) lines.push('Phone: ' + phone); if (email) lines.push('Email: ' + email); if (biz) lines.push('About my business: ' + biz);
-  window.open('https://wa.me/971507855329?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+  window.open('https://wa.me/971585696708?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
 });
 </script>
 </body>
