@@ -1036,16 +1036,63 @@ render();
 </script>
 
 <script>
-document.addEventListener('click', function (e) {
-  var b = e.target.closest && e.target.closest('form button');
-  if (!b) return;
-  e.preventDefault();
-  var f = b.closest('form'), v = function (sel) { var el = f.querySelector(sel); return el ? el.value.trim() : ''; };
-  var name = v('input[placeholder="Name"]'), phone = v('input[type="tel"]'), email = v('input[type="email"]'), biz = v('input[placeholder^="Tell me"]');
-  var lines = ['Hi Kate! I would like to book a consultation.'];
-  if (name) lines.push('Name: ' + name); if (phone) lines.push('Phone: ' + phone); if (email) lines.push('Email: ' + email); if (biz) lines.push('About my business: ' + biz);
-  window.open('https://wa.me/971585696708?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
-});
+(function () {
+  var KEY = '66f7cd07-0433-4bfb-ac0f-178fe8cf2f79';
+  var WA = 'https://wa.me/971585696708';
+  function ensureHoneypot() {
+    document.querySelectorAll('#app form').forEach(function (f) {
+      if (f.querySelector('input[name="botcheck"]')) return;
+      var hp = document.createElement('input');
+      hp.type = 'checkbox'; hp.name = 'botcheck'; hp.tabIndex = -1; hp.setAttribute('aria-hidden', 'true'); hp.autocomplete = 'off';
+      hp.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0;';
+      f.appendChild(hp);
+    });
+  }
+  setInterval(ensureHoneypot, 1000); ensureHoneypot();
+  function note(f, text, isErr) {
+    var n = f.querySelector('.kk-form-note');
+    if (!n) { n = document.createElement('p'); n.className = 'kk-form-note'; n.setAttribute('role', 'status'); n.style.cssText = 'margin:16px 0 0;font-size:14px;line-height:1.5;'; f.appendChild(n); }
+    n.style.color = isErr ? '#FF8CC6' : '#E9A8C3';
+    n.textContent = text;
+  }
+  document.addEventListener('submit', function (e) { if (e.target.closest && e.target.closest('#app form')) e.preventDefault(); }, true);
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('#app form button');
+    if (!b) return;
+    e.preventDefault();
+    var f = b.closest('form');
+    if (f.__sending) return;
+    var v = function (sel) { var el = f.querySelector(sel); return el ? el.value.trim() : ''; };
+    var name = v('input[placeholder="Name"]'), phone = v('input[type="tel"]'), email = v('input[type="email"]'), biz = v('input[placeholder^="Tell me"]');
+    var hp = f.querySelector('input[name="botcheck"]');
+    if (!name || (!phone && !email)) { note(f, 'Please add your name and a phone number or email so I can get back to you.', true); return; }
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { note(f, 'Please check your email address.', true); return; }
+    f.__sending = true;
+    var label = b.querySelector('span') || b; var old = label.textContent; label.textContent = 'Sending…';
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify((function () {
+        var d = { access_key: KEY, subject: 'New consultation request · katekorsmarketing.com', from_name: 'katekorsmarketing.com',
+          name: name, phone: phone || '—', message: biz || '—', botcheck: hp && hp.checked ? true : '' };
+        if (email) d.email = email;
+        return d;
+      })())
+    }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || j.success === false) throw new Error(j.message || 'failed'); }); })
+      .then(function () {
+        f.innerHTML = '';
+        var box = document.createElement('div'); box.setAttribute('role', 'status');
+        box.style.cssText = 'display:flex;flex-direction:column;gap:14px;padding:28px 0;';
+        var h = document.createElement('p'); h.style.cssText = "margin:0;font-family:'Onest',sans-serif;font-size:clamp(24px,3vw,34px);font-weight:600;letter-spacing:-.03em;color:#FFFFFF;"; h.textContent = 'Thank you, ' + name.split(' ')[0] + '!';
+        var t = document.createElement('p'); t.style.cssText = 'margin:0;font-size:16px;color:#E6DEE3;line-height:1.5;'; t.textContent = "Your request is with me. I'll get back to you within 24 hours.";
+        var a = document.createElement('a'); a.href = WA; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Need it faster? Message me on WhatsApp →'; a.style.cssText = 'font-size:15px;color:#E9A8C3;text-decoration:none;';
+        box.appendChild(h); box.appendChild(t); box.appendChild(a); f.appendChild(box);
+      })
+      .catch(function () {
+        f.__sending = false; label.textContent = old;
+        note(f, 'Sorry, the form could not be sent. Please message me on WhatsApp: +971 58 569 6708.', true);
+      });
+  });
+})();
 </script>
 </body>
 </html>
