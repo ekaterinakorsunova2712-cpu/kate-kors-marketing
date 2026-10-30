@@ -1069,7 +1069,10 @@ render();
     if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { note(f, 'Please check your email address.', true); return; }
     f.__sending = true;
     var label = b.querySelector('span') || b; var old = label.textContent; label.textContent = 'Sending…';
-    fetch('https://api.web3forms.com/submit', {
+    var tg = fetch('/api/notify', { method: 'POST', headers: { 'Content-Type': 'application/json' }, keepalive: true,
+      body: JSON.stringify({ name: name, phone: phone, email: email, message: biz, botcheck: hp && hp.checked ? true : '' }) })
+      .then(function (r) { return r.ok; }).catch(function () { return false; });
+    var mail = fetch('https://api.web3forms.com/submit', {
       method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify((function () {
         var d = { access_key: KEY, subject: 'New consultation request · katekorsmarketing.com', from_name: 'katekorsmarketing.com',
@@ -1078,6 +1081,8 @@ render();
         return d;
       })())
     }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || j.success === false) throw new Error(j.message || 'failed'); }); })
+      .then(function () { return true; }, function () { return false; });
+    Promise.all([mail, tg]).then(function (res) { if (!res[0] && !res[1]) throw new Error('failed'); })
       .then(function () {
         f.innerHTML = '';
         var box = document.createElement('div'); box.setAttribute('role', 'status');

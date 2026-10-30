@@ -16,3 +16,9 @@ return 404, and the pages are marked noindex.
 
 - New client: add a folder under `clients/`, add a line to `CLIENTS` in `functions/_middleware.js`, push.
 - `clients.katekorsmarketing.com` must be added under Custom domains of the Pages project.
+
+## Form notifications
+
+The consultation form sends each request to kate@katekorsmarketing.com (Web3Forms, key in `index.html`)
+and to Telegram via `functions/api/notify.js`. Telegram needs two Pages secrets:
+`TELEGRAM_BOT_TOKEN` (from @BotFather) and `TELEGRAM_CHAT_ID` (from @userinfobot).
